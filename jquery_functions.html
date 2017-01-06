@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>JQuery Functions</title>
+    <link rel="stylesheet" type="text/css" href="jqueryfunctions_style.css">
+    <style type="text/css">
+    .highlight{
+        background: yellow;
+    }</style>
+      
+      <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+      <script type="text/javascript">
+
+      $(document).ready(function(){
+      	
+
+
+
+      	// Click
+      	$('#clickbutton').click(function(event){
+      		alert('This is the event');
+      	});
+ 
+ 		// Hide
+		 $('#hidebutton').click(function(){
+		        $('.hidedesc').hide();
+		});
+
+		 // Show
+		$('h4.showdesc').hide()
+
+		 $('#showbutton').click(function(){
+		        $('h4.showdesc').show();
+		});
+
+		// Toggle
+
+		 $('#togglebutton').click(function(){
+		        $('h4').toggle();
+		});
+
+         // Slide Up and Slide Down
+         $(".up-btn").click(function(){
+                $("p.sud").slideUp(10);
+        });
+        $(".down-btn").click(function(){
+                $("p.sud").slideDown(10);
+        });
+
+        // Slide Toggle
+
+         $(".slideTogglebutton").click(function(){
+            $("p.slideToggledesc").slideToggle(25);
+        });
+
+        // FadeIn and FadeOut
+         $(".fadein-btn").click(function(){
+            $("p.fio").fadeIn("slow");
+        });
+        $(".fadeout-btn").click(function(){
+            $("p.fio").fadeOut("slow");
+        });
+        // AddClass
+         $(".addClassbutton").click(function(){
+            $("h5.addClassdesc").addClass("highlight");
+
+        });
+        // Add content after heading on button click
+         $(".beforebutton").click(function(){
+            $(".beforeAndAfter h5").before('<img src="nature-2.png" alt="Nature Symbol" style="width=25px;height=25px">');
+        });
+            
+            // Add content before heading on button click
+        $(".afterbutton").click(function(){
+            $(".beforeAndAfter h5").after('<img src="nature-2.png" alt="Nature Symbol" style="width=25px;height=25px">');
+        });
+
+         // Append
+        $(".appendbutton").click(function() {
+             $(".append h5").append(" more info added.. ");
+        }); 
+            // HTML
+        $(".htmlbutton").click(function() {
+            $(".htmldesc").html(" Change to HTML ");
+        }); 
+            // attr
+        $(".attrbutton").click(function() {
+            $(".attr img").attr("width","600");
+        }); 
+            // val
+        $(".valbutton").click(function() {
+            $("input:text").val("Sarah Fogarty");
+        }); 
+            // text
+        $(".textbutton").click(function() {
+            $(".text_p").text("This is the new text");
+        });
+            // data
+        $(".databutton1").click(function() {
+            $("div").data("greeting", "Hello World");
+        });
+        $(".databutton2").click(function() {
+            alert($("div").data("greeting"));
+        });
+
+	   });     
+   
+      </script>
+  </head>
+  <body>
+    <div class="click">
+
+    	<h3 class="title">
+    		Click
+    	</h3>
+    	<h5 class="clickdesc">
+    	Triggers an event on a element.
+    	</h5>
+    	<button id="clickbutton">click</button>
+    </div>
+
+    <div class="hide">
+    	<h3 class="title">
+    		Hide
+    	</h3>
+    	<h4 class="hidedesc">
+    	This should hide when clicked
+    	</h4>
+    	<button id="hidebutton">hide</button>
+    </div>
+
+    <div class="show">
+    	<h3 class="title">
+    		Show
+    	</h3>
+    	<h4 class="showdesc">
+    	Display the matched elements.
+    	</h4>
+    	<button id="showbutton">show description</button>
+    </div>
+
+    <div class="toggle">
+    	<h3 class="title">
+    		Toggle
+    	</h3>
+    	<button id="togglebutton">Press here to reset prior tests</button>
+    </div>
+
+    <div class="slideUpDown">
+    	<h3 class="title">
+    		SlideUp and SlideDown
+    	</h3>
+        <p class="sud">This is the content that will slide up and slide down.</p>
+        <button type="button" class="up-btn">Slide Up</button>
+        <button type="button" class="down-btn">Slide Down</button>
+
+    </div>
+
+    <div class="slideToggle">
+    	<h3 class="title">
+    	 SlideToggle
+    	</h3>
+    	<p class="slideToggledesc">
+        This text should slide toggle.
+    	</p>
+    	<button class="slideTogglebutton">slideToggle</button>
+    </div>
+
+    <div class="fadeInOut">
+        <h3 class="title">
+            Fade In and Fade Out
+        </h3>
+        <p class="fio">This is the content that will fade in and fade out.</p>
+            <div>
+                <button type="button" class="fadein-btn">Fade In</button>
+                <button type="button" class="fadeout-btn">Fade Out</button>
+            </div>
+
+    </div>
+
+
+    <div class="addClass">
+    	<h3 class="title">
+    		AddClass
+    	</h3>
+    	<h5 class="addClassdesc">
+    	 This text will highlight yellow when addClass button is pressed.
+    	</h5>
+    	<button class="addClassbutton">addClass</button>
+    </div>
+
+    <div class="beforeAndAfter">
+    	<h3 class="title">
+ 			Before and After
+    	</h3>
+    	<h5 class="beforeAfterDesc">
+    	Icons will be entered before and after this text.
+    	</h5>
+    	<button class="beforebutton">before</button>
+        <button class="afterbutton">after</button>
+    </div>
+
+    <div class="append">
+
+  		<h3 class="title">
+    		Append
+    	</h3>
+    	<h5 class="appenddesc">
+    	Insert content, specified by the parameter, to the end of each element in the set of matched elements.
+    	</h5>
+    	<button class="appendbutton">add description to box</button> 
+    </div>
+
+    <div class="html">
+
+  		<h3 class="title">
+    		HTML
+    	</h3>
+    	<h5 class="htmldesc">
+    	Get the HTML contents of the first element in the set of matched elements or set the HTML contents of every matched element.
+    	</h5>
+    	<button class="htmlbutton">change content</button> 
+    </div>
+
+    <div class="attr">
+
+  		<h3 class="title">
+    		Attr
+    	</h3>
+    	<h5 class="attrdesc">
+    	Changes the attribute of an element.
+    	</h5>
+        <div class="attr_box">
+        <img src="jquery_image.png" alt="image" width=350 height=250>
+    	<button class="attrbutton">change pic attributes</button> 
+        </div>
+    </div>
+
+    <div class="val">
+
+  		<h3 class="title">
+    		Val
+    	</h3>
+    	<h5 class="desc">
+    	Get the current value of the first element in the set of matched elements or set the value of every matched element.
+    	</h5>
+        <p>
+           Name: <input type="text" name="user"> 
+        </p>
+    	<button class="valbutton">Set the value of the input field</button> 
+    </div>
+
+    <div class="text">
+
+  		<h3 class="title">
+    		Text
+    	</h3>
+    	<h5 class="desc">
+    	Set text content for all specified elements.
+    	</h5>
+        <p class="text_p"> This text should change </p>
+    	<button class="textbutton">Set text content for all text_p elements</button> 
+    </div>
+
+    <div class="data">
+
+  		<h3 class="title">
+    		Data
+    	</h3>
+    	<h5 class="desc">
+    	Attach data to a div element and then retrieve that data.
+    	</h5>
+        <button class="databutton1">Attach data</button> 
+        <button class="databutton2">Get data attached to div element</button>
+        <div></div>
+    </div>
+
+  </body>
+</html>

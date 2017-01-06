@@ -1,0 +1,162 @@
+* {
+	margin: 0px auto;
+	padding: 0px;
+}
+.click{
+	height: 150px;
+	width: 960px;
+	background: gray;
+	text-align: center;
+	vertical-align: center;
+	margin: 20px;
+	padding: 20px;
+
+}
+.hide{
+	height: 150px;
+	width: 960px;
+	text-align: center;
+	vertical-align: center;
+	margin: 20px;
+	padding: 20px;
+}
+
+.show{
+	height: 150px;
+	width: 960px;
+	background: gray;
+	text-align: center;
+	vertical-align: center;
+	margin: 20px;
+	padding: 20px;
+}
+
+.toggle{
+	height: 150px;
+	width: 960px;
+	text-align: center;
+	vertical-align: center;
+	margin: 20px;
+	padding: 20px;
+}
+.slideUpDown{
+	height: 150px;
+	width: 960px;
+	background: gray;
+	text-align: center;
+	vertical-align: center;
+	margin: 20px;
+	padding: 20px;
+}
+
+.slideToggle{
+	height: 150px;
+	width: 960px;
+	text-align: center;
+	vertical-align: center;
+	margin: 20px;
+	padding: 20px;
+}
+.fadeInOut{
+	height: 150px;
+	width: 960px;
+	background: gray;
+	text-align: center;
+	vertical-align: center;
+	margin: 20px;
+	padding: 20px;
+}
+.addClass{
+	height: 150px;
+	width: 960px;
+	text-align: center;
+	vertical-align: center;
+	margin: 20px;
+	padding: 20px;
+}
+.beforeAndAfter{
+	height: 150px;
+	width: 960px;
+	background: gray;
+	text-align: center;
+	vertical-align: center;
+	margin: 20px;
+	padding: 20px;
+
+}
+
+.append{
+	height: 150px;
+	width: 960px;
+	text-align: center;
+	vertical-align: center;
+	margin: 20px;
+	padding: 20px;
+}
+
+.html{
+	height: 150px;
+	width: 960px;
+	background: gray;
+	text-align: center;
+	vertical-align: center;
+	margin: 20px;
+	padding: 20px;
+}
+
+.attr{
+	height: 350px;
+	width: 960px;
+	text-align: center;
+	vertical-align: center;
+	margin: 20px;
+	padding: 20px;
+}
+	.attr_box img{
+		display: block;
+
+	}
+	.attr_box button{
+		text-align: center;
+		background: gray;
+		color: white;
+	}
+.val{
+	height: 150px;
+	width: 960px;
+	background: gray;
+	text-align: center;
+	vertical-align: center;
+	margin: 20px;
+	padding: 20px;
+}
+	.val p{
+		width: 250px;
+	}
+.text{
+	height: 150px;
+	width: 960px;
+	text-align: center;
+	vertical-align: center;
+	margin: 20px;
+	padding: 20px;
+}
+.data{
+	height: 150px;
+	width: 960px;
+	background: gray;
+	text-align: center;
+	vertical-align: center;
+	margin: 20px;
+	padding: 20px;
+}	
+
+h3{
+	color: green;
+}
+h4{
+	color: red;
+}
+h5{
+	color: blue;
+}
